@@ -1,11 +1,19 @@
 import React from "react";
-import { useEffect } from "react/cjs/react.production.min";
 import Layout from "../components/Layout";
 import SubLayout from "../components/SubLayout";
+import { useEffect, useState } from "react";
 
 export default function CSR() {
-  useEffect(() => {}, []);
-  return <div>csr</div>;
+  const [time, setTime] = useState("");
+  useEffect(() => {
+    console.log("client");
+    setTime(new Date().toISOString());
+  }, []);
+  return (
+    <div>
+      <h1 className="title">{time}</h1>
+    </div>
+  );
 }
 
 CSR.getLayout = function getLayout(page) {
