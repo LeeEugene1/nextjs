@@ -11,7 +11,6 @@ export default function Layout({ children }) {
 
       <main>
         <p className="description">{children}</p>
-
         <div className="grid">
           <a href="/" className="card">
             <h3>SSR &rarr;</h3>
