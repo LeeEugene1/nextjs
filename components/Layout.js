@@ -5,12 +5,13 @@ export default function Layout({ children }) {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Create Next App2</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <p className="description">{children}</p>
+        <div className="description">{children}</div>
+
         <div className="grid">
           <a href="/" className="card">
             <h3>SSR &rarr;</h3>
@@ -32,6 +33,16 @@ export default function Layout({ children }) {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
+          </a>
+
+          <a href="/shallow/my/info" className="card">
+            <h3>URL &rarr;</h3>
+            <p>url을 바꾸는 3가지 방법</p>
+          </a>
+
+          <a href="/demo/apiRoutes" className="card">
+            <h3>API &rarr;</h3>
+            <p>API Routes</p>
           </a>
         </div>
       </main>
